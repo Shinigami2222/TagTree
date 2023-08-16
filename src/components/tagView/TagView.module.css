@@ -1,0 +1,104 @@
+/* TagView component styling */
+.tagView {
+  border: 1px solid #e1e5ea;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: 400px;
+}
+
+.titleAndButton {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.toggleAndTitle {
+  display: flex;
+  align-items: baseline;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.title p {
+  margin: 0;
+}
+
+.toggleButton {
+  height: 30px;
+  width: 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 5px;
+  transition: 0.3s ease;
+}
+
+.toggleButton:hover {
+  background-color: #0056b3;
+}
+
+.editableNameInput {
+  flex-grow: 1;
+  border: none;
+  font-size: 16px;
+  padding: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.addButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.addButton:hover {
+  background-color: #0056b3;
+}
+
+.tagData {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #e1e5ea;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+}
+
+.tagData input[type="text"] {
+  width: 80%;
+  height: 20px;
+  padding: 8px;
+  border: 1px solid #e1e5ea;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.data p {
+  font-size: 15px;
+  font-weight: 700;
+}
