@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Nested Tags Tree UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Nested Tags Tree UI is a React application that allows users to create and manage a nested tree structure of tags. This README provides an overview of the project, installation instructions, and key features.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Installation and Setup](#installation-and-setup)
+- [Project Structure](#project-structure)
+- [Components](#components)
+- [Exporting Data](#exporting-data)
+- [Styling](#styling)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Installation and Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Prerequisites:**
+   - Node.js and npm installed on your machine.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Project Setup:**
+   - Clone this repository: `git clone https://github.com/Shinigami2222/TagTree.git`
+   - Navigate to the project folder: `cd tagtree`
+   - Install dependencies: `npm install`
 
-### `npm test`
+3. **Running the Application:**
+   - Start the development server: `npm start`
+   - Open your browser and go to `http://localhost:3000`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+- The project is organized into components for easy management.
+- Each tag is represented by a `TagView` component and can have child tags represented by `TagChildren` components.
+- Styling is managed using CSS Modules for a modular approach.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### TagView Component
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Displays an individual tag's name and data.
+- Features:
+  - Editing tag name by clicking on it.
+  - Collapsing/expanding child tags.
+  - Adding child tags.
+  - Editing tag data.
 
-### `npm run eject`
+### TagChildren Component
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Renders child tags within a `TagView`.
+- Supports recursive rendering for nested tags.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Exporting Data
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Click the "Export" button to export the current tree structure to JSON format.
+- The exported data matches the current expanded/collapsed state of the tree.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Styling
 
-## Learn More
+- CSS Modules are used for styling.
+- Components have their own CSS files for better organization.
+- Supports both light and dark themes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Prepare for Deployment:
+   - Optimize your application for production.
+   - Test thoroughly.
 
-### Code Splitting
+2. Choose a Hosting Service:
+   - Deploy to a web hosting service of your choice (e.g., GitHub Pages, Netlify).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+1. Create and manage tags using the user-friendly UI.
+2. Collapse/expand tags by clicking on the arrows.
+3. Edit tag names by clicking on them.
+4. Add child tags using the "Add Child" button.
+5. Export the tree structure to JSON using the "Export" button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+Contributions are welcome! If you find any issues or want to improve the project, feel free to submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
